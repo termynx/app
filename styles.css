@@ -102,6 +102,23 @@ h1 span, .platform-intro h2 span { background: linear-gradient(110deg, #32dcf2 4
 .site-footer { display: flex; align-items: center; gap: 1rem; min-height: 112px; border-top: 1px solid var(--line); }
 .footer-brand { font-size: 1.05rem; }
 .site-footer p { margin: 0 auto 0 1.5rem; color: #8290a9; font-size: .83rem; }
+.footer-link { white-space: nowrap; }
+
+.policy { max-width: 860px; margin: 0 auto; padding: 5rem 0 6rem; }
+.policy-heading { padding-bottom: 2.6rem; border-bottom: 1px solid var(--line); }
+.policy-heading .eyebrow { margin-bottom: 1rem; }
+.policy h1 { font-size: clamp(3rem, 7vw, 5rem); }
+.policy-date { color: var(--cyan) !important; font-size: .9rem !important; font-weight: 700; }
+.policy-heading > p:last-child { max-width: 46rem; }
+.policy p, .policy li { color: #b1bed4; font-size: 1rem; line-height: 1.8; }
+.policy-content section { padding: 2.1rem 0; border-bottom: 1px solid var(--line); }
+.policy-content h2 { margin: 0 0 1rem; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.04em; }
+.policy-content p { margin: 0; }
+.policy-content ul { margin: 0; padding-left: 1.4rem; }
+.policy-content li + li { margin-top: .8rem; }
+.policy-content strong { color: var(--text); }
+.policy-content a { color: var(--cyan); text-decoration: underline; text-underline-offset: .18em; }
+.policy-content a:hover { color: white; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 1.3rem; padding: 4rem 0 3rem; }
@@ -139,6 +156,8 @@ h1 span, .platform-intro h2 span { background: linear-gradient(110deg, #32dcf2 4
   .site-footer { flex-wrap: wrap; gap: .7rem 1rem; padding: 1.5rem 0; }
   .site-footer p { order: 3; width: 100%; margin: 0; }
   .site-footer > a:last-child { margin-left: auto; }
+  .policy { padding: 3.5rem 0 4rem; }
+  .policy-content section { padding: 1.75rem 0; }
 }
 
 @media (max-width: 390px) {
